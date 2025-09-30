@@ -64,8 +64,10 @@ body {
     align-self: center;
 }
 
-.img_logo {
-    margin: 0 0 4px 34px;
+.header_logo_image {
+    margin: 0px 0 0px 38px;
+    width: 137px;
+    height: 137px;
 }
 
 .header_address {
@@ -99,6 +101,12 @@ body {
 .cover {
     grid-area: logo;
     display: flex;
+}
+
+.cover_image {
+    height: 757px;
+    object-fit: cover;
+    align-self: center;
 }
 
 .cover_title {
@@ -201,6 +209,9 @@ body {
 .lots_image {
     grid-row: 1;
     grid-column: 1;
+    height: 596px;
+    object-fit: cover;
+    align-self: center;
 }
 
 .overlay_lots {
@@ -249,13 +260,36 @@ body {
 .about_logo {
     grid-row: 1;
     grid-column: 1;
+    
+    display: grid;
+    grid-template-columns: 359px;
+    grid-template-rows: 275px;
+    width: 359px;
+    height: 275px;
+}
+
+.about_logo_black_plate {
+    grid-row: 1;
+    grid-column: 1;
     margin: 35px 0 0 47px;
+    border: 120px solid #000;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+}
+
+.about_logo_img {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 81px 0 0 93px;
+    width: 148px;
+    height: 148px;
 }
 
 .about_header {
     grid-row: 1;
     grid-column: 2;
-    margin: 139px 0 0 0;
+    margin: 136px 0 0 0;
 }
 
 .about_text {
@@ -301,5 +335,7 @@ footer {
 
 .footer_socials_item {
     display: inline;
-    margin: 0 0 0 44px;
+    margin: 0 0 0 43px;
+    width: 49px;
+    height: 49px;
 }
