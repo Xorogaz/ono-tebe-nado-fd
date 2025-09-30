@@ -323,14 +323,15 @@ footer {
 
 .footer_socials {
   grid-column: 3;
+  display: flex;
   margin: 1px 49px 0 0;
+  gap: 43px;
   justify-items: end;
   justify-self: end;
 }
 
 .footer_socials_item {
   display: inline;
-  margin: 0 0 0 43px;
   width: 49px;
   height: 49px;
 }
