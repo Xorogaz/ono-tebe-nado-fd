@@ -1,341 +1,336 @@
 body {
-    display: grid;
-    grid-template-rows: 293px 2555px 180px;
-    grid-template-columns: 1100px;
-    grid-template-areas: 
+  display: grid;
+  grid-template-rows: 293px 2555px 180px;
+  grid-template-columns: 1100px;
+  grid-template-areas:
     "header"
     "main"
     "footer";
-    justify-content: center;
-    box-sizing: border-box;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 /*header*/
 .header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 444px 367px 295px;
-    height: 293px;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 444px 367px 295px;
+  height: 293px;
 }
 
 .header__menu {
-    grid-column: 1;
-    padding: 0 0 4px 1px;
-    align-self: center;
+  grid-column: 1;
+  padding: 0 0 4px 1px;
+  align-self: center;
 }
 
 .header__links-list {
-    display: flex;
-    flex-direction: row;
-    gap: 13.4px;
-    margin: 0 0 1px 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 13.4px;
+  margin: 0 0 1px 50px;
 }
 
 .header__links-list-item_main {
-    margin: 0 9px 0 0;
+  margin: 0 9px 0 0;
 }
 
 .header__links-list-item {
-    list-style-type: circle;
-    margin: 0 0 0 8px;
-    align-self: start;
+  list-style-type: circle;
+  margin: 0 0 0 8px;
+  align-self: start;
 }
 
 .header_list_circle {
-    display: flex;
-    margin-top: 7px;
-    justify-content: center;
-    align-content: center;
-    border-radius: 50%;
-    background: #000;
-    width: 6px;
-    height: 6px;
+  display: flex;
+  margin-top: 7px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+  background: #000;
+  width: 6px;
+  height: 6px;
 }
 .header_list_circle_inside {
-    border-radius: 50%;
-    background: #FFF;
-    align-self: center;
-    width: 4px;
-    height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  align-self: center;
+  width: 4px;
+  height: 4px;
 }
 
-.header_logo{
-    grid-column: 2;
-    align-self: center;
+.header_logo {
+  grid-column: 2;
+  align-self: center;
 }
 
 .header_logo_image {
-    margin: 0px 0 0px 38px;
-    width: 137px;
-    height: 137px;
+  margin: 0px 0 0px 38px;
+  width: 137px;
+  height: 137px;
 }
 
 .header_address {
-    grid-column: 3;
-    display: flex;
-    flex-direction: column;
-    line-height: 24.5px;
-    padding: 0 0 4px 0;
-    letter-spacing: 0px;
-    align-self: center;
-    width: 230px;
-    font-style: normal;
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  line-height: 24.5px;
+  padding: 0 0 4px 0;
+  letter-spacing: 0px;
+  align-self: center;
+  width: 230px;
+  font-style: normal;
 }
 
 .main {
-    display: grid;
-        display: grid;
-    grid-template-rows: 757px 180px 723px 120px 595px 180px;
-    grid-template-columns: 1100px;
-    grid-template-areas: 
+  display: grid;
+  display: grid;
+  grid-template-rows: 757px 180px 723px 120px 595px 180px;
+  grid-template-columns: 1100px;
+  grid-template-areas:
     "logo"
     "."
     "lots"
     "."
     "about"
     ".";
-    justify-content: center;
+  justify-content: center;
 }
 
 /*cover*/
 .cover {
-    grid-area: logo;
-    display: flex;
+  grid-area: logo;
+  display: flex;
 }
 
 .cover_image {
-    height: 757px;
-    object-fit: cover;
-    align-self: center;
+  height: 757px;
+  object-fit: cover;
+  align-self: center;
 }
 
 .cover_title {
-    margin: 165px 50px auto 50px;
-    display: grid;
-    height: 385px;;
-    width: 1000px;
-    grid-template-rows: 1fr 1fr 1fr;
-    color: #FFF;
-    font-size: 100px;
-    font-weight: 700;
-    letter-spacing: 0.3em;
+  margin: 165px 50px auto 50px;
+  display: grid;
+  height: 385px;
+  width: 1000px;
+  grid-template-rows: 1fr 1fr 1fr;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
 }
 
 .cover_title_IT {
-    grid-row: 1;
-    align-self: center;
-    justify-self: start;
-    padding-bottom: 11px;
+  grid-row: 1;
+  align-self: center;
+  justify-self: start;
+  padding-bottom: 11px;
 }
 
 .cover_title_NEEDS {
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
 }
 
 .cover_title_YOU {
-    grid-row: 3;
-    align-self: center;
-    justify-self: end;
-    padding-top: 12px;
+  grid-row: 3;
+  align-self: center;
+  justify-self: end;
+  padding-top: 12px;
 }
 
 .anti_letter_spacing {
-    letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .cover_overlay {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    width: 1100px;
-    height: 757px;
-    top: 293px;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 1100px;
+  height: 757px;
+  top: 293px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cover_description {
-    margin: 0 50px 50px 50px;
-    width: 1000px;
-    height: 51px;
-    align-self: end;
-    display: flex;
-    font-size: 22px;
+  margin: 0 50px 50px 50px;
+  width: 1000px;
+  height: 51px;
+  align-self: end;
+  display: flex;
+  font-size: 22px;
 }
 
 .cover_description_text {
-    color: #FFF;
-    display: flex;
-    align-self: center;
-    margin: 0 auto 0 0;
-    width: 637px;
-    justify-content: space-between;   
+  color: #fff;
+  display: flex;
+  align-self: center;
+  margin: 0 auto 0 0;
+  width: 637px;
+  justify-content: space-between;
 }
 
 .bet-button {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;
-    font: 22px 'Raleway';
-    width: 256px;
-    justify-self: end;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  font: 22px "Raleway";
+  width: 256px;
+  justify-self: end;
 }
 
 /*lots*/
 .lots {
-    grid-area: lots;
-    margin: 0 24px 0 24px;
-    line-height: 1.2;
+  grid-area: lots;
+  margin: 0 24px 0 24px;
+  line-height: 1.2;
 }
 
 .lots_header {
-    margin: -1px 0 27px 40px;
+  margin: -1px 0 27px 40px;
 }
 
 .lots_card-list {
-    display: flex;
-    column-gap: 25px;
-    height: 596px
-    
+  display: flex;
+  column-gap: 25px;
+  height: 596px;
 }
 
 .lots_card-list-item {
-    display: grid;
-    grid-template-rows: 596px;
-    grid-template-columns: 334px;
+  display: grid;
+  grid-template-rows: 596px;
+  grid-template-columns: 334px;
 }
 
 .lots_image {
-    grid-row: 1;
-    grid-column: 1;
-    height: 596px;
-    object-fit: cover;
-    align-self: center;
+  grid-row: 1;
+  grid-column: 1;
+  height: 596px;
+  object-fit: cover;
+  align-self: center;
 }
 
 .overlay_lots {
-    grid-row: 1;
-    grid-column: 1;
-    background: rgba(0, 0, 0, 0.6);
-    width: 334px;
-    height: 596px;
-    display: flex;
-    flex-direction: column;
+  grid-row: 1;
+  grid-column: 1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 334px;
+  height: 596px;
+  display: flex;
+  flex-direction: column;
 }
 
 .lots_content {
-    display: flex;
-    margin: 48px 40px;
-    flex-direction: column;
-    height: 500px;
-    
+  display: flex;
+  margin: 48px 40px;
+  flex-direction: column;
+  height: 500px;
 }
 
 .lots_content_head {
-    align-self: start;
-    margin: 0 0 auto 0;
+  align-self: start;
+  margin: 0 0 auto 0;
 }
 
 .lots_content_text {
-    font-size: 20px;
-    color: #fff;
-    align-self: end;
+  font-size: 20px;
+  color: #fff;
+  align-self: end;
 }
 
 .lots_watch_more {
-    margin: 30px 0 0 40px;
-    font-size: 20px;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
 }
 
 /*about*/
 .about {
-    grid-area: about;
-    margin: 0 24px 0 24px;
-    display: grid;
-    grid-template-rows: 275px 1fr;
-    grid-template-columns: 359px 1fr;
+  grid-area: about;
+  margin: 0 24px 0 24px;
+  display: grid;
+  grid-template-rows: 275px 1fr;
+  grid-template-columns: 359px 1fr;
 }
 
 .about_logo {
-    grid-row: 1;
-    grid-column: 1;
-    
-    display: grid;
-    grid-template-columns: 359px;
-    grid-template-rows: 275px;
-    width: 359px;
-    height: 275px;
+  grid-row: 1;
+  grid-column: 1;
+
+  display: grid;
+  grid-template-columns: 359px;
+  grid-template-rows: 275px;
+  width: 359px;
+  height: 275px;
 }
 
 .about_logo_black_plate {
-    grid-row: 1;
-    grid-column: 1;
-    margin: 35px 0 0 47px;
-    border: 120px solid #000;
-    border-radius: 50%;
-    width: 240px;
-    height: 240px;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 35px 0 0 47px;
+  border: 120px solid #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
 }
 
 .about_logo_img {
-    grid-row: 1;
-    grid-column: 1;
-    margin: 81px 0 0 93px;
-    width: 148px;
-    height: 148px;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 81px 0 0 93px;
+  width: 148px;
+  height: 148px;
 }
 
 .about_header {
-    grid-row: 1;
-    grid-column: 2;
-    margin: 136px 0 0 0;
+  grid-row: 1;
+  grid-column: 2;
+  margin: 136px 0 0 0;
 }
 
 .about_text {
-    grid-row: 2;
-    grid-column: 2;
-    margin: 8px 0 0 0;
-    font-size: 20px;
+  grid-row: 2;
+  grid-column: 2;
+  margin: 8px 0 0 0;
+  font-size: 20px;
 }
-
 
 /*footer*/
 footer {
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: start;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: start;
 }
 .footer_address {
-    grid-column: 1;
-    margin: 0 0 0 50px;
-    width: 265px;
-    display: flex;
-    flex-direction: column;
-    line-height: 24.5px;
-    letter-spacing: 0px;
-    align-self: center;
+  grid-column: 1;
+  margin: 0 0 0 50px;
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  line-height: 24.5px;
+  letter-spacing: 0px;
+  align-self: center;
 }
 
-
 .footer_nav {
-    grid-column: 2;
-    justify-items: center;
-    line-height: 22px;
+  grid-column: 2;
+  justify-items: center;
+  line-height: 22px;
 }
 
 .footer_socials {
-    grid-column: 3;
-    margin: 1px 49px 0 0;
-    justify-items: end;
-    justify-self: end;
-    
+  grid-column: 3;
+  margin: 1px 49px 0 0;
+  justify-items: end;
+  justify-self: end;
 }
 
 .footer_socials_item {
-    display: inline;
-    margin: 0 0 0 43px;
-    width: 49px;
-    height: 49px;
+  display: inline;
+  margin: 0 0 0 43px;
+  width: 49px;
+  height: 49px;
 }
