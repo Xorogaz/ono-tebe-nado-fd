@@ -84,7 +84,6 @@ body {
 
 .main {
   display: grid;
-  display: grid;
   grid-template-rows: 757px 180px 723px 120px 595px 180px;
   grid-template-columns: 1100px;
   grid-template-areas:
