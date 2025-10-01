@@ -61,14 +61,18 @@ body {
   grid-column: 1;
   padding: 0 0 4px 1px;
   align-self: center;
+  display: flex;
 }
 
 .header__links-list {
   display: flex;
   flex-direction: row;
   gap: 13.4px;
-  margin: 0 0 1px 50px;
   list-style-type: circle;
+}
+
+.header__links-list-item-no-circle {
+  margin: 0 13px 1px 50px;
 }
 
 .header__links-list-item {
@@ -323,8 +327,7 @@ body {
   align-content: start;
 }
 
-.address_footer
-{
+.address_footer {
   grid-column: 1;
   margin: 0 0 0 50px;
   padding: 0;
