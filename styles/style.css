@@ -19,8 +19,6 @@ body {
 }
 
 .link_without_line {
-    display: block;
-    color: #000;
     text-decoration: none;
 }
 
@@ -65,7 +63,7 @@ body {
   flex-direction: row;
   gap: 13.4px;
   list-style-type: circle;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 31px;
 }
 
 .header__links-list-item-no-circle {
